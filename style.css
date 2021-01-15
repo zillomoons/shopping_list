@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #06d6a0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    color: #edf6f9;
+}
+.lists {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+    width: 100%;
+
+}
+.lists h2{
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #d5e6e7;
+    color: #25252c;
+    width: 100%;
+    border-radius: 8px;
+    margin: 4px 0px;
+    padding: 15px 20px;
+    text-align: center;
+}
+.lists .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*flex: 1;*/
+
+    width: 100%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 100%;
+
+    background-color: #f3f3f3;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+}
+
+.lists .list .list-item {
+    background-color: #ffd166;
+    border-radius: 8px;
+    margin: 4px 0px;
+    padding: 15px 20px;
+    text-align: left;
+    width: 100%;
+}
+.lists .list .list-item:hover {
+    cursor: grab;
+}
+.lists .list .list-item:active {
+    cursor: grabbing;
+}
